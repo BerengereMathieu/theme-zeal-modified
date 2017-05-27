@@ -95,7 +95,7 @@
 						$categories = get_the_category();
 						$cat = $categories[0];
 						endif;
-						$cat_posts=get_posts(array(
+						$cat_posts=get_posts(array('numberposts' => -1,
 					        'category' => $cat->term_id , 'orderby' => 'date',
 					        'order' => 'DESC'));
 					    $currentPostId=0;

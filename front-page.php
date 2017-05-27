@@ -61,6 +61,10 @@ get_header();
                         <?php endwhile; ?>
 
                     </section>
+                    
+                    <div class="zeal-pagination">
+                        <?php echo paginate_links(); ?>
+                    </div>
 
                 </div>
 

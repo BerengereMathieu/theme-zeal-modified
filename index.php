@@ -25,6 +25,7 @@ get_header(); ?>
                     <section class="homepage-portfolio">
 
                         <div class="col-sm-12">
+							
 
                             <h2 class="wow fadeInDown feature-content-title">
 
@@ -38,7 +39,6 @@ get_header(); ?>
 
                         <?php /* Start the Loop */ ?>
                         <?php while (have_posts()) : the_post(); 
- 
                             get_template_part( 'template-parts/content-blog-3cols', get_post_format() );
                         
                         endwhile; ?>
