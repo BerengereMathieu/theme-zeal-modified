@@ -26,8 +26,17 @@ endif;
         <div class="blog-post-overlay">
 
             <h2 class="post-title">
-                <?php echo esc_html( wp_trim_words( get_the_title(), 10 ) ); ?>
+                <?php 
+	                echo esc_html( wp_trim_words( get_the_title(), 10 ) ); 	                
+                ?>
             </h2>
+            <h6 style="color:white">
+                <?php 
+	                $categories = get_the_category();
+					$cat = $categories[0];
+	                echo $cat->name ; 	                
+                ?>
+            </h6>
 
         </div>
 
